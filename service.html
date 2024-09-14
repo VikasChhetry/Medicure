@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City General Hospital Services</title>
+    <link rel="stylesheet" href="css/service.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h1>MEDICURE Hospital Services</h1>
+    </header>
+
+    <main>
+        <section id="services">
+            <div class="service-card" id="appointments">
+                <img src="images/calendar.png" alt="Calendar icon">
+                <h2>Appointments</h2>
+                <p>Book: <span id="appointment-count">0</span></p>
+                <button onclick="incrementService('appointment')">Book Appointment</button>
+            </div>
+            <div class="service-card" id="ambulance">
+                <img src="images/ambulance.png" alt="Ambulance icon">
+                <h2>Ambulance</h2>
+                <p>Calls: <span id="ambulance-count">0</span></p>
+                <button onclick="incrementService('ambulance')">Call Ambulance</button>
+            </div>
+            <div class="service-card" id="contact">
+                <img src="images/customer-service.png" alt="Contact icon">
+                <h2>Contact Us</h2>
+                <p>Inquiries: <span id="contact-count">0</span></p>
+                <button onclick="incrementService('contact')">Contact Us</button>
+            </div>
+            <div class="service-card" id="feedback">
+                <img src="images/feedback.png" alt="Feedback icon">
+                <h2>Feedback</h2>
+                <p>Responses: <span id="feedback-count">0</span></p>
+                <button onclick="incrementService('feedback')">Give Feedback</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 City General Hospital. All rights reserved.</p>
+    </footer>
+
+    <script src="js/service.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Appointment </title>
+    <link rel="stylesheet" href="css/appo.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Doctor Appointment </h1>
+        
+        <div class="appointment-form">
+            <h2>Book an Appointment</h2>
+            <form id="appointmentForm">
+                <input type="text" id="patientName" placeholder="Patient Name" required>
+                <input type="email" id="patientEmail" placeholder="Email" required>
+                <input type="tel" id="patientPhone" placeholder="Phone Number" required>
+                <input type="date" id="appointmentDate" required>
+                <input type="time" id="appointmentTime" required>
+                <select id="doctorName" required>
+                    <option value="">Select Doctor</option>
+                    <option value="Dr. Smith">Dr. Smith</option>
+                    <option value="Dr. Johnson">Dr. Johnson</option>
+                    <option value="Dr. Williams">Dr. Williams</option>
+                </select>
+                <button type="submit">Book Appointment</button>
+            </form>
+        </div>
+        
+        <div class="appointment-list">
+            <h2>Upcoming Appointments</h2>
+            <ul id="appointmentsList"></ul>
+        </div>
+    </div>
+    
+    <script src="js/appo.js"></script>
+</body>
+</html>
